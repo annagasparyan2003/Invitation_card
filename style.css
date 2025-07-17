@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Metanoia';
-    src: url('/Fonts/Metanoia.woff2') format('woff2'),
-        url('/Fonts/Metanoia.woff') format('woff');
+    src: url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/Metanoia.woff2') format('woff2'),
+        url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/Metanoia.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'ArmGrqi';
-    src: url('/Fonts/Arian_Grqi_i_U.ttf') format('truetype'),
-        url('/Fonts/Arian_Grqi_U.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/Arian_Grqi_i_U.ttf') format('truetype'),
+        url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/Arian_Grqi_U.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
     font-family: 'ArmDec';
-    src: url('/Fonts/ArmenianDecorativeU-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/ArmenianDecorativeU-Italic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,7 +38,7 @@
 
 @font-face {
     font-family: 'Quicksand';
-    src: url("/Fonts/Quicksand.ttf") format('truetype');
+    src: url("https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/Quicksand.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
