@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'Metanoia';
+    src: url('/Fonts/Metanoia.woff2') format('woff2'),
+        url('/Fonts/Metanoia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Для оптимизации загрузки */
+}
+
+@font-face {
+    font-family: 'Arsenica';
+    src: url('/Fonts/ArsenicaTrial-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Для оптимизации загрузки */
+}
+
+@font-face {
+    font-family: 'ArmGrqi';
+    src: url('/Fonts/Arian_Grqi_i_U.ttf') format('truetype'),
+        url('/Fonts/Arian_Grqi_U.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Для оптимизации загрузки */
+}
+
+@font-face {
+    font-family: 'ArmDec';
+    src: url('/Fonts/ArmenianDecorativeU-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Для оптимизации загрузки */
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("/Fonts/Quicksand.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* Для оптимизации загрузки */
+}
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+    height: auto;
+    /* сброс фиксированной высоты */
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.invitation {
+    text-align: center;
+    /* padding: 20px;
+    /* border: 1px solid #ddd; */
+    /* border-radius: 10px; */
+    margin-top: 1.5rem;
+    height: 30rem;
+}
+
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+}
+
+.prev {
+    border: 0.5px solid;
+    border-radius: 2%;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.title {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 12rem;
+}
+
+.title img {
+    width: 5rem;
+}
+
+.title p {
+    font-size: 3rem;
+    margin-left: 1.1rem;
+    font-family: 'Metanoia';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.img7 {
+    width: 17rem;
+    margin: 0 auto;
+}
+
+.img7 img {
+    width: 17rem;
+}
+
+.imgp7 {
+    margin: 0 auto;
+    width: 14rem;
+}
+
+.imgp7 p {
+    font-size: 2rem;
+    width: 14rem;
+    font-family: 'Metanoia';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.lastprev {
+    width: 4rem;
+}
+
+.lastprev img {
+    width: 15rem;
+}
+
+.newclass {
+    margin: 3rem auto;
+    width: 100%;
+}
+
+.newdate {
+    display: flex;
+    gap: 5.7rem;
+    font-size: 3rem;
+    margin-top: -5.8rem;
+    margin-left: 6.2rem;
+    height: 3rem;
+    width: 100%;
+}
+
+.newp {
+    width: 13.5rem;
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.newp p {
+    font-family: "Arsenica";
+}
+
+
+.imgholder {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    padding-bottom: 0rem;
+}
+
+.imgholder_block {
+    width: 32%;
+    position: relative;
+}
+
+.imgholder_block p {
+    position: absolute;
+    right: 0rem;
+    z-index: 2;
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    bottom: -0.3rem;
+}
+
+.imgholder img {
+    width: 100%;
+    height: 100%;
+}
+
+
+h1 {
+    width: 50%;
+    /* или фиксированная ширина, например 300px */
+    margin: 0 auto;
+    /* автоматические отступы слева/справа */
+    text-align: center;
+    /* текст внутри тоже по центру */
+    /* background: lightblue; для наглядности */
+    font-size: 24px;
+    font-weight: 100;
+    font-family: "ArmGrqi";
+}
+
+.calendar_main {
+    position: relative;
+    width: 100%;
+    max-width: 24rem;
+    /* Фиксированная максимальная ширина (можно ajust под ваш дизайн) */
+    margin: 0 auto;
+    /* Центрирование по горизонтали */
+    max-width: 10px;
+    font-family: "ArmGrqi";
+}
+
+.calendar .calendar_img {
+    position: absolute;
+    /* left: 5%; */
+    /* Адаптивный отступ вместо 9% */
+    width: 90%;
+    /* Занимает 90% ширины родителя */
+    /* max-width: 300px;  */
+    left: calc(50% - 171px);
+    /* Центрирование с учетом ширины */
+    width: 80vw;
+    max-width: 300px;
+    font-family: "ArmGrqi";
+}
+
+.calendar .calendar_main {
+    position: relative;
+    width: 90%;
+    /* Занимает 90% ширины родителя */
+    max-width: 20rem;
+    /* Фиксированный максимум */
+    /* margin-left: 10%; */
+    /* Адаптивный отступ вместо left: 12% */
+    padding-top: 4rem;
+    /* Отступ для .calendar_img */
+    font-family: "ArmGrqi";
+
+}
+
+.calendar .calendar_img img {
+    margin: 0 auto;
+    /* автоматические отступы слева/справа */
+    text-align: center;
+    /* текст внутри тоже по центру */
+    width: 20rem;
+    margin-top: 2rem;
+    border: solid 0.09rem;
+    padding: 0.7rem;
+    display: block;
+    filter: grayscale(60%) opacity(70%);
+    /* Серый + прозрачность */
+}
+
+.calendar_c {
+    /* padding: 15px; */
+    /* background: #4682b4; */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* position: relative; */
+    font-family: "ArmGrqi";
+
+}
+
+.month-year {
+    text-align: left;
+    /* padding-left: 0.4rem; */
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 15px;
+
+    /* Обязательно добавьте одну из этих строк: */
+    /* height: 13rem; */
+    /* Фиксированная высота */
+    /* или */
+    max-height: 80vh;
+    /* Гибкая высота (80% экрана) */
+    overflow-y: auto;
+    font-family: "ArmGrqi";
+
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* gap: 1px;  */
+    /* text-align: center;
+    padding: 10px 0; */
+    /* background: #e6f2ff; */
+    font-weight: bold;
+    color: #ffffff;
+    /* padding-left: 15px; */
+    padding: 10px;
+
+    /* Обязательно добавьте одну из этих строк: */
+    /* height: 13rem; */
+    /* Фиксированная высота */
+    /* или */
+    max-height: 80vh;
+    /* Гибкая высота (80% экрана) */
+    overflow-y: auto;
+}
+
+.days {
+    display: grid;
+    /* column-gap: 0.3px;  */
+
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    padding: 10px;
+
+    /* Обязательно добавьте одну из этих строк: */
+    height: 13rem;
+    /* Фиксированная высота */
+    /* или */
+    max-height: 80vh;
+    /* Гибкая высота (80% экрана) */
+    overflow-y: auto;
+}
+
+.days div {
+    padding: 0px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.date {
+    margin-top: 1.5rem;
+    margin-left: 12%;
+    font-size: large;
+}
+
+
+.general {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 8rem;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    font-family: "ArmGrqi";
+
+}
+
+.general svg {
+    padding: 15px 0;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* text-align: center; */
+    align-items: center;
+    gap: 25px;
+}
+
+.part2 p {
+    text-align: left;
+    font-family: "ArmGrqi";
+
+}
+
+.part2 img {
+    /* margin: 0 auto; */
+    /* автоматические отступы слева/справа */
+    /* text-align: center; */
+    /* текст внутри тоже по центру */
+
+    border: solid 0.5px;
+    padding: 0.3rem;
+    width: 20rem;
+}
+
+#img4 {
+    width: 18rem;
+}
+
+
+.part3 {
+    /* margin-top: 2rem; */
+    display: flex;
+    flex-direction: column;
+    margin: 5rem auto 0 auto;
+    /* text-align: center; */
+    align-items: center;
+    gap: 25px;
+    font-family: "Metanoia";
+
+}
+
+.part3 img {
+    width: 12rem;
+}
+
+.part3 p {
+    /* font-size: 1rem; */
+    text-align: center;
+    width: 16rem;
+
+}
+
+.arennane {
+    font-size: 3rem;
+    margin-top: 0;
+    font-family: "Arsenica";
+}
+
+.endtext {
+    margin: 0 auto;
+    width: 16rem;
+    text-align: center;
+}
+
+.endtext1 {
+    margin-bottom: 1rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.endtext2 {
+    font-size: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 5rem;
+}
+
+
+/* Timer */
+
+.timer {
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    width: 20rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+#minutes {
+    font-size: 3rem;
+    margin: 0 1rem;
+}
+
+#hours {
+    font-size: 3rem;
+    margin: 0 1rem;
+
+}
+
+#days {
+    font-size: 3rem;
+    margin: 0 1rem;
+
+}
+
+#seconds {
+    font-size: 3rem;
+    margin: 0 1rem;
+
+}
+
+/* Animations */
+
+/* Плавные анимации (добавьте в конец вашего CSS) */
+/* Очень медленные и плавные анимации */
+.prev {
+    animation: ultraGentleFadeIn 2.4s cubic-bezier(0.2, 0.6, 0.35, 1) both;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.title p {
+    animation: ultraGentleLetterFade 1.6s cubic-bezier(0.2, 0.6, 0.35, 1) both;
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+.title p:nth-child(1) { animation-delay: 0.3s; }
+.title p:nth-child(3) { animation-delay: 0.6s; }
+
+.title img {
+    animation: ultraGentleScaleIn 1.8s cubic-bezier(0.2, 0.6, 0.35, 1) both;
+    animation-delay: 0.5s;
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+.img7 img {
+    animation: ultraGentleSlideFade 2s cubic-bezier(0.2, 0.6, 0.35, 1) both;
+    animation-delay: 0.8s;
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+.imgp7 p {
+    animation: ultraGentleTextAppear 1.6s cubic-bezier(0.2, 0.6, 0.35, 1) both;
+    animation-delay: 1.2s;
+    opacity: 0;
+    transform: translateY(3px);
+}
+
+/* Супер-плавные ключевые кадры */
+@keyframes ultraGentleFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ultraGentleLetterFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ultraGentleScaleIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ultraGentleSlideFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes ultraGentleTextAppear {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.newclass {
+    margin: 3rem auto;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease; /* Было 1.5s */
+    transform: translateY(30px);
+}
+
+.newclass.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.imgholder_block {
+    opacity: 0;
+    transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Было 1.2s */
+}
+
+.imgholder_block:nth-child(1) {
+    transform: translateX(-50px);
+    transition-delay: 0.3s; /* Было 0.4s */
+}
+.imgholder_block:nth-child(2) {
+    transform: translateY(50px);
+    transition-delay: 0.15s; /* Было 0.2s */
+}
+.imgholder_block:nth-child(3) {
+    transform: translateX(50px);
+    transition-delay: 0.45s; /* Было 0.6s */
+}
+
+.newclass.animate .imgholder_block {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.imgholder_block p {
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease; /* Было 0.8s */
+    transform: scale(0.8);
+}
+
+.newclass.animate .imgholder_block:nth-child(2) p {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.6s; /* Было 0.8s */
+}
+
+.newclass.animate .imgholder_block:nth-child(1) p {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.9s; /* Было 1.2s */
+}
+
+.newclass.animate .imgholder_block:nth-child(3) p {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1.2s; /* Было 1.6s */
+}
+
+.newp {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease; /* Было 0.8s */
+}
+
+.newclass.animate .newp {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s; /* Было 1.2s */
+}
+
+/* Эффект при наведении (без изменений) */
+.imgholder_block:hover img {
+    transform: scale(1.03);
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
