@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Arsenica';
-    src: url('/Fonts/ArsenicaTrial-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/annagasparyan2003/Invitation_card/main/fonts/ArsenicaTrial-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
